@@ -1,0 +1,20 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+}
+.contenedorMayor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px magenta solid;
+    height: 95vh;
+    width: 95vw;
+}
+.contenedor{
+    display: grid;
+    border: 1px black solid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
