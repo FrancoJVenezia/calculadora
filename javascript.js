@@ -38,7 +38,7 @@ function calculate() {
       case '*':
         pantallaUno = parseFloat(pantallaDos) * parseFloat(pantallaUno);
         break;
-      case '÷':
+      case '/':
         pantallaUno = parseFloat(pantallaDos) / parseFloat(pantallaUno);
         break;
       default:

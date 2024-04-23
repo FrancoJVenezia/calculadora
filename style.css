@@ -6,32 +6,32 @@
 }
 .contenedorMayor{
     display: flex;
+    position: absolute;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    border: 1px magenta solid;
-    height: 95vh;
-    width: 95vw;
+    height: 100%;
+    width: 100%;
 }
 .contenedor{
+    left: 50%;
+    top: 50%;
     display: grid;
     grid-template-rows: 3fr 5fr;
     height: 60%;
     width: 20%;    
-    border: 1px black solid;
+    border: 2px black solid;
+    background-color: #D0CEBA;
 }
 .contenedorSuperior{
     display:grid;
     grid-template-rows: 1fr 2fr;
-
-    overflow: scroll;
+    padding: 0 16px;
 }
 .contenedorInferior{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-
-    overflow: hidden;
 }
 #sumar{
     grid-row: 2/4;
@@ -47,14 +47,20 @@
 .boton{
     background-color: rgb(255, 249, 241);
     font-size: 125%;
-    overflow: scroll;
+    border: 0.1px solid gray;
 }
 
 #pantallaUno,
 #pantallaDos{
-
-    direction : rtl ;
     justify-self: flex-end;
     align-self: center;
-    font-size: 125%;
+}
+#pantallaUno{
+    font-size: 64px;
+}
+#pantallaDos{
+    font-size: 32px;
+}
+body{
+    background-color: #4B3F72;
 }
